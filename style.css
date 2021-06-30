@@ -1,0 +1,55 @@
+#title{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: 50px;
+}
+body{
+    background: linear-gradient(yellow 0%, orange 25%, orangered 50%, red 75%, black 100%);
+    
+}
+h3,h1{
+    font-weight: bolder;
+    color: white;
+}
+h2, h4{
+    color: white;
+}
+
+#animation{
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    position: relative;
+    background-color: cyan;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes anim {
+    0% {background-color: cyan; left: 0px; top: 0px;}
+    25% {background-color: green; left: 200px; top: 0px;}
+    50% {background-color: pink; left: 200px; top: 200px;}
+    75% {background-color: yellow; left: 0px; top: 200px;}
+    100% {background-color: cyan; left: 0px; top: 0px;}
+}
+#animation2{
+    animation-name: anim2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    position: relative;
+    background-color: cyan;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim2 {
+    0% {background-color: green; left: 0px; top: 0px;}
+    25% {background-color: pink; left: 100px; top: 0px;}
+    50% {background-color: yellow; left: 100px; top: 100px;}
+    75% {background-color: cyan; left: 0px; top: 100px;}
+    100% {background-color: green; left: 0px; top: 0px;}
+}
+
+img{
+    height: 300px;
+}
